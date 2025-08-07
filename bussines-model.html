@@ -14,45 +14,59 @@
             name="keywords"
         />
 
-        <!-- Favicons -->
+        <!-- Favicon (локальний або свій шлях) -->
         <link href="assets/img/favicon.png" rel="icon" />
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
         <!-- Google Fonts -->
         <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
 
-        <!-- Vendor CSS Files -->
+        <!-- Bootstrap CSS -->
         <link
-            href="assets/vendor/animate.css/animate.min.css"
-            rel="stylesheet"
-        />
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link
-            href="assets/vendor/bootstrap/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/boxicons/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/glightbox/css/glightbox.min.css"
-            rel="stylesheet"
-        />
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link
-            href="assets/vendor/swiper/swiper-bundle.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
 
-        <!-- Template Main CSS File -->
+        <!-- Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Boxicons -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Animate.css -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- AOS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <!-- Glightbox -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Swiper -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Ваш основний стиль -->
         <link href="assets/css/style.css" rel="stylesheet" />
     </head>
 
@@ -293,6 +307,7 @@
         <!-- End Баннер cookie -->
 
         <!-- Vendor JS Files -->
+        <!-- Vendor JS Files -->
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -303,5 +318,32 @@
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/cookiebanner.js"></script>
+        <!-- Bootstrap Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- AOS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Glightbox -->
+        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Ініціалізація бібліотек -->
+        <script>
+            AOS.init();
+            const lightbox = GLightbox();
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
     </body>
 </html>
